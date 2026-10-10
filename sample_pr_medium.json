@@ -1,0 +1,42 @@
+{
+  "title": "Refactor order calculation logic",
+  "description": "Refactored the order calculation module to simplify discount handling and improve performance. Core pricing logic has been reorganized without changing the external API.",
+  "repository": "demo-commerce",
+  "service": "order-service",
+  "files_changed": 11,
+  "lines_added": 286,
+  "lines_removed": 214,
+  "changed_files": [
+    "src/orders/calculation.py",
+    "src/orders/discounts.py",
+    "src/orders/totals.py",
+    "src/orders/order_service.py",
+    "src/orders/models.py",
+    "tests/orders/test_calculation.py",
+    "tests/orders/test_discounts.py"
+  ],
+  "changes": {
+    "authentication": false,
+    "authorization": false,
+    "payment_logic": false,
+    "database": false,
+    "public_api": false,
+    "infrastructure": false
+  },
+  "testing": {
+    "tests_added": 5,
+    "tests_modified": 7,
+    "coverage_before": 92.0,
+    "coverage_after": 87.5,
+    "failed_tests": 0
+  },
+  "service_context": {
+    "traffic": "high",
+    "recent_incidents": 1,
+    "production_criticality": "high"
+  },
+  "deployment": {
+    "rollback_available": true,
+    "rollback_time_minutes": 7
+  }
+}

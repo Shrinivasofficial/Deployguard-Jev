@@ -1,0 +1,44 @@
+{
+  "title": "Replace authentication middleware and token validation",
+  "description": "Replaced authentication middleware and modified JWT validation, session handling, and authorization checks.",
+  "repository": "demo-commerce",
+  "service": "identity-service",
+  "files_changed": 19,
+  "lines_added": 614,
+  "lines_removed": 387,
+  "changed_files": [
+    "src/auth/middleware.py",
+    "src/auth/token_validator.py",
+    "src/auth/session.py",
+    "src/auth/authorization.py",
+    "src/auth/jwt.py",
+    "src/api/auth_routes.py",
+    "src/api/user_routes.py",
+    "tests/auth/test_middleware.py",
+    "tests/auth/test_tokens.py"
+  ],
+  "changes": {
+    "authentication": true,
+    "authorization": true,
+    "payment_logic": false,
+    "database": false,
+    "public_api": true,
+    "infrastructure": false
+  },
+  "testing": {
+    "tests_added": 3,
+    "tests_modified": 4,
+    "coverage_before": 94.0,
+    "coverage_after": 82.1,
+    "failed_tests": 0
+  },
+  "service_context": {
+    "traffic": "high",
+    "recent_incidents": 2,
+    "production_criticality": "critical"
+  },
+  "deployment": {
+    "rollback_available": true,
+    "rollback_time_minutes": 15
+  }
+}

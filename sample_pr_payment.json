@@ -1,0 +1,39 @@
+{
+  "title": "Refactor payment retry logic",
+  "description": "Refactored the payment retry mechanism to reduce duplicate transactions.",
+  "repository": "demo-commerce",
+  "service": "payment-service",
+  "files_changed": 14,
+  "lines_added": 421,
+  "lines_removed": 133,
+  "changed_files": [
+    "src/payment/retry.py",
+    "src/payment/processor.py",
+    "src/payment/transaction.py",
+    "tests/payment/test_retry.py"
+  ],
+  "changes": {
+    "authentication": false,
+    "authorization": false,
+    "payment_logic": true,
+    "database": true,
+    "public_api": false,
+    "infrastructure": false
+  },
+  "testing": {
+    "tests_added": 2,
+    "tests_modified": 3,
+    "coverage_before": 91.0,
+    "coverage_after": 86.8,
+    "failed_tests": 0
+  },
+  "service_context": {
+    "traffic": "high",
+    "recent_incidents": 3,
+    "production_criticality": "high"
+  },
+  "deployment": {
+    "rollback_available": true,
+    "rollback_time_minutes": 8
+  }
+}

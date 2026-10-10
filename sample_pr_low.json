@@ -1,0 +1,40 @@
+{
+  "title": "Update dashboard button styling",
+  "description": "Improved button spacing, typography, hover states, and visual consistency. No application logic was changed.",
+  "repository": "demo-commerce",
+  "service": "web-dashboard",
+  "files_changed": 5,
+  "lines_added": 42,
+  "lines_removed": 18,
+  "changed_files": [
+    "src/components/Button.css",
+    "src/components/Button.tsx",
+    "src/pages/Dashboard.css",
+    "src/components/Card.css",
+    "tests/components/Button.test.tsx"
+  ],
+  "changes": {
+    "authentication": false,
+    "authorization": false,
+    "payment_logic": false,
+    "database": false,
+    "public_api": false,
+    "infrastructure": false
+  },
+  "testing": {
+    "tests_added": 3,
+    "tests_modified": 1,
+    "coverage_before": 89.0,
+    "coverage_after": 90.2,
+    "failed_tests": 0
+  },
+  "service_context": {
+    "traffic": "high",
+    "recent_incidents": 0,
+    "production_criticality": "medium"
+  },
+  "deployment": {
+    "rollback_available": true,
+    "rollback_time_minutes": 2
+  }
+}
